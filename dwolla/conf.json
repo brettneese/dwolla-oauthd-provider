@@ -1,0 +1,53 @@
+{
+    "name": "Dwolla",
+    "url": "https://www.dwolla.com/oauth/v2",
+    "oauth2": {
+        "authorize": {
+            "url": "/authenticate",
+            "method": "get",
+            "query": {
+                "client_id": "{client_id}",
+                "response_type": "code",
+                "redirect_uri": "{{callback}}",
+                "scope": "{scope}"
+            }
+        },
+        "access_token": {
+            "url": "/token",
+            "method": "get"
+        },
+        "request": {
+            "url": "https://api.vk.com",
+            "query": {
+                "client_id": "{client_id}",
+                "client_secret": "{client_id}",
+                "redirect_uri": "{{callback}}",
+                "code": "{{code}}",
+                "grant_type": "authorization_code"
+            }
+        },
+        "parameters": {
+            "client_id": "string",
+            "client_secret": "string",
+            "scope": {
+                "separator": "|",
+                "values": {
+                    "AccountInfoFull": "Detailed information about the authenticated account.",
+                    "Contacts": "Contacts of the authenticated account.",
+                    "Transactions": "Transaction details and listing",
+                    "Balance": "Dwolla balance of the authenticated account",
+                    "Send": "Send money from the authenticated account",
+                    "Request": "Initiate a money request, originating from the authenticated account",
+                    "Funding": "Funding sources (i.e. bank accounts) linked to the authenticated account",
+                    "ManageAccount": "Manage the user's account information"
+                }
+            }
+        }
+    },
+    "href": {
+        "keys": "https://www.dwolla.com/applications/",
+        "docs": "https://developers.dwolla.com/dev/docs",
+        "apps": "https://www.dwolla.com/applications/",
+        "provider": "https://dwolla.com/"
+    }
+}
