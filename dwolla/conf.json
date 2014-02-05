@@ -14,20 +14,14 @@
         },
         "access_token": {
             "url": "/token",
-            "method": "get",
-            "query": {
-                "client_id": "{client_id}",
-                "client_secret": "{client_secret}",
-                "code": "{{code}}",
-                "grant_type": "authorization_code"
-            }
+            "method": "get"
         },
         "request": {
-            "url": "https://www.dwolla.com/oauth/v2/rest",
+            "url": "https://www.dwolla.com/oauth/rest/",
             "query": {
                 "client_id": "{client_id}",
-                "client_secret": "{client_secret}",
-                "access_token": "{{token}}",
+                "client_secret": "{client_id}",
+                "oauth_token": "{{token}}"
             }
         },
         "parameters": {
