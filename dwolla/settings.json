@@ -1,16 +1,16 @@
 {
 	"settings": {
 		"createApp": {
-			"url": "https://vk.com/editapp?act=create",
+			"url": "https://www.dwolla.com/applications/create",
 			"image": "config.png"
 		},
 		"copyingKey": {
-			"url": "https://vk.com/apps?act=settings"
+			"url": "https://www.dwolla.com/applications/"
 		},
 		"install": {
 			"href": {
-				"provider": "https://vk.com/",
-				"docs": "https://vk.com/dev/main"
+				"provider": "https://dwolla.com/",
+				"docs": "https://developers.dwolla.com/dev/docs"
 			}
 		}
 	}
