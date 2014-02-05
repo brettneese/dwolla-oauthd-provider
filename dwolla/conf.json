@@ -17,7 +17,7 @@
             "method": "get"
         },
         "request": {
-            "url": "https://api.vk.com",
+            "url": "https://www.dwolla.com/oauth/v2",
             "query": {
                 "client_id": "{client_id}",
                 "client_secret": "{client_id}",
