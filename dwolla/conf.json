@@ -20,7 +20,7 @@
             "url": "https://www.dwolla.com/oauth/v2/rest",
             "query": {
                 "client_id": "{client_id}",
-                "client_secret": "{client_id}",
+                "client_secret": "{client_secret}",
                 "redirect_uri": "{{callback}}",
                 "code": "{{code}}",
                 "grant_type": "authorization_code"
